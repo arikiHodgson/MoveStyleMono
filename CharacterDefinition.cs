@@ -24,7 +24,7 @@ namespace BrcCustomCharactersLib
         public AudioClip[] VoiceGetHit;
         public AudioClip[] VoiceJump;
 
-        public int _blinkBlendShapeIndex;
+        public int BlinkBlendShapeIndex;
 
         public string Id;
     }
