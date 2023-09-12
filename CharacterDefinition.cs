@@ -6,7 +6,7 @@ namespace BrcCustomCharactersLib
     [AddComponentMenu("BRC Custom Characters/Character Definition")]
     public class CharacterDefinition : MonoBehaviour
     {
-        public BrcNamedCharacter CharacterToReplace;
+        public BrcCharacter CharacterToReplace;
 
         public string CharacterName = "New Custom Character";
 

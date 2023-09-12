@@ -1,6 +1,6 @@
 ﻿namespace BrcCustomCharactersLib
 {
-    public enum BrcNamedCharacter
+    public enum BrcCharacter
     {
         Vinyl,
         Frank,
@@ -27,6 +27,7 @@
         Shine,
         FauxWithoutBoostPack,
         DotExeBoss,
-        FelixWithCyberHead
+        FelixWithCyberHead,
+        New
     }
 }
