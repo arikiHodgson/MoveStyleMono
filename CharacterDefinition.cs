@@ -16,6 +16,7 @@ namespace BrcCustomCharactersLib
 
         public Material Graffiti;
         public string GraffitiName;
+        public string GraffitiArtist;
 
         public AudioClip[] VoiceDie;
         public AudioClip[] VoiceDieFall;
