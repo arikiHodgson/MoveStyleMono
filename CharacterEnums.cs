@@ -27,7 +27,6 @@
         Shine,
         FauxWithoutBoostPack,
         DotExeBoss,
-        FelixWithCyberHead,
-        New
+        FelixWithCyberHead
     }
 }
