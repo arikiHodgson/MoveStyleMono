@@ -1,4 +1,4 @@
-﻿namespace BrcCustomCharactersLib
+﻿namespace CrewBoomMonobehaviours
 {
     public enum BrcCharacter
     {

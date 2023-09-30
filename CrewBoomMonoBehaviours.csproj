@@ -2,8 +2,8 @@
 
   <PropertyGroup>
     <TargetFramework>net46</TargetFramework>
-    <AssemblyName>BrcCustomCharactersLib</AssemblyName>
-    <Description>Library for BrcCustomCharacters.</Description>
+    <AssemblyName>CrewBoomMonoBehaviours</AssemblyName>
+    <Description>Library to supply monobehaviours for Crew Boom characters.</Description>
     <Version>1.0.0</Version>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
     <LangVersion>latest</LangVersion>

@@ -1,9 +1,8 @@
-﻿using System;
-using UnityEngine;
+﻿using UnityEngine;
 
-namespace BrcCustomCharactersLib
+namespace CrewBoomMonobehaviours
 {
-    [AddComponentMenu("BRC Custom Characters/Character Definition")]
+    [AddComponentMenu("Crew Boom/Character Definition")]
     public class CharacterDefinition : MonoBehaviour
     {
         public bool IsNewCharacter;
