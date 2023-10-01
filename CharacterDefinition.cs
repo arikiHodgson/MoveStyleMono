@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace CrewBoomMonobehaviours
+namespace CrewBoomMono
 {
     [AddComponentMenu("Crew Boom/Character Definition")]
     public class CharacterDefinition : MonoBehaviour

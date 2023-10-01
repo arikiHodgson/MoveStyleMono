@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>net46</TargetFramework>
-    <AssemblyName>CrewBoomMonoBehaviours</AssemblyName>
+    <AssemblyName>CrewBoomMono</AssemblyName>
     <Description>Library to supply monobehaviours for Crew Boom characters.</Description>
     <Version>1.0.0</Version>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
