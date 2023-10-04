@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System.Collections.Generic;
+using UnityEngine;
 
 namespace CrewBoomMono
 {
@@ -10,8 +11,11 @@ namespace CrewBoomMono
 
         public string CharacterName = "New Custom Character";
 
-        public Material[] Outfits;
-        public bool UseReptileShader = true;
+        public SkinnedMeshRenderer[] Renderers;
+        //This really sucks but I have to do it as Unity still doesn't support serialized types from a DLL
+        //that isn't shipped with the game itself but loaded with Assembly.Load (which BepInEx probably does)
+        //It also doesn't serialize multi-dimensional arrays so even that doesn't work
+        public CharacterOutfit[] Outfits;
 
         public Material Graffiti;
         public string GraffitiName;
