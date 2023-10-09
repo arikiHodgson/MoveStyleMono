@@ -4,6 +4,7 @@ namespace CrewBoomMono
 {
     public class CharacterOutfit : MonoBehaviour
     {
+        public string Name;
         public bool[] EnabledRenderers;
         public CharacterOutfitRenderer[] MaterialContainers;
     }

@@ -1,15 +1,14 @@
-﻿using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 namespace CrewBoomMono
 {
     [AddComponentMenu("Crew Boom/Character Definition")]
     public class CharacterDefinition : MonoBehaviour
     {
-        public bool IsNewCharacter;
-        public BrcCharacter CharacterToReplace;
-
         public string CharacterName = "New Custom Character";
+        public BrcCharacter FreestyleAnimation = BrcCharacter.Red;
+        public BrcCharacter BounceAnimation = BrcCharacter.Red;
+        public BrcMovestyle DefaultMovestyle = BrcMovestyle.Skateboard;
 
         public SkinnedMeshRenderer[] Renderers;
         //This really sucks but I have to do it as Unity still doesn't support serialized types from a DLL
@@ -32,5 +31,10 @@ namespace CrewBoomMono
         public bool CanBlink;
 
         public string Id;
+    }
+
+    public class CharacterConfig
+    {
+        public string CharacterToReplace = "None";
     }
 }

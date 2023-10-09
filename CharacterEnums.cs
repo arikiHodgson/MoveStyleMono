@@ -2,6 +2,7 @@
 {
     public enum BrcCharacter
     {
+        None = -1,
         Vinyl,
         Frank,
         Coil,
@@ -28,5 +29,12 @@
         FauxWithoutBoostPack,
         DotExeBoss,
         FelixWithCyberHead
+    }
+
+    public enum BrcMovestyle
+    {
+        Bmx = 1,
+        Skateboard,
+        Skates
     }
 }
