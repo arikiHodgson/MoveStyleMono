@@ -1,4 +1,4 @@
-﻿namespace CrewBoomMono
+﻿namespace MoveStylerMono
 {
     public enum BrcCharacter
     {
@@ -33,8 +33,10 @@
 
     public enum BrcMovestyle
     {
+        ON_FOOT = 0,
         Bmx = 1,
         Skateboard,
-        Skates
+        Skates,
+        Special
     }
 }

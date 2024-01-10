@@ -2,8 +2,8 @@
 
   <PropertyGroup>
     <TargetFramework>net46</TargetFramework>
-    <AssemblyName>CrewBoomMono</AssemblyName>
-    <Description>Library to supply monobehaviours for Crew Boom characters.</Description>
+    <AssemblyName>MoveStylerMono</AssemblyName>
+    <Description>Library to supply monobehaviours for MoveStyler objects.</Description>
     <Version>1.0.0</Version>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
     <LangVersion>latest</LangVersion>
