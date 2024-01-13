@@ -11,7 +11,10 @@ namespace MoveStylerMono
         //public BrcCharacter FreestyleAnimation = BrcCharacter.Red;
         //public BrcCharacter BounceAnimation = BrcCharacter.Red;
         public BrcMovestyle ParentMovestyle = BrcMovestyle.Skateboard;
-        public bool UseHandIK = false;
+        //public bool UseHandIK = false;
+        // Split the hand IK defaults
+        public bool UseHandRIK = false;
+        public bool UseHandLIK = false;
 
         public MeshRenderer[] PropRenderers;
         public string[] PropAttachmentBones;
@@ -94,7 +97,8 @@ namespace MoveStylerMono
         // Token: 0x04002767 RID: 10087
         public float duration = 1.0f;
         // Token: 0x04002768 RID: 10088
-        public bool handIK;
+        public bool lHandIKOverride;
+        public bool rHandIKOverride;
         public bool feetIK;
         // Token: 0x04002769 RID: 10089
         public _AnimType animType;
