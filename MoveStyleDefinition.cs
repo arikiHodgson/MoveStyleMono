@@ -47,15 +47,30 @@ namespace MoveStylerMono
         //public CharacterOutfit[] Outfits;
 
         // **** Rework audio for movestyle
-        public AudioClip[] VoiceDie;
-        public AudioClip[] VoiceDieFall;
-        public AudioClip[] VoiceTalk;
-        public AudioClip[] VoiceBoostTrick;
-        public AudioClip[] VoiceCombo;
-        public AudioClip[] VoiceGetHit;
-        public AudioClip[] VoiceJump;
+        public CustomSFXCollection SFXCollection;
 
-        //public bool CanBlink;
+        // **** Audio Overrides
+
+        public AudioClip[] Jump;
+        public AudioClip[] Land;
+        public AudioClip[] Run;
+        public AudioClip[] Wallrun;
+        public AudioClip[] Slide;
+        public AudioClip[] Grind;
+        public AudioClip[] GroundTrick1;
+        public AudioClip[] GroundTrick2;
+        public AudioClip[] GroundTrick3;
+        public AudioClip[] AirTrick1;
+        public AudioClip[] AirTrick2;
+        public AudioClip[] AirTrick3;
+        public AudioClip[] GrindTrick1;
+        public AudioClip[] GrindTrick2;
+        public AudioClip[] GrindTrick3;
+        public AudioClip[] HandPlant;
+
+            // **** Custom Audio Clips
+        public AudioClip[] CustomAudioClips;
+        public int[] AudioClipID;
 
         public string Id;
 
@@ -139,5 +154,49 @@ namespace MoveStylerMono
         public string animName;
         public float fadeDuration;
 
+    }
+
+    [System.Serializable]
+    public class CustomSFXCollection
+    {
+
+        public AudioClip[] Jump;
+        public AudioClip[] Land;
+        public AudioClip[] Run;
+        public AudioClip[] Wallrun;
+        public AudioClip[] Slide;
+        public AudioClip[] Grind;
+        public AudioClip[] GroundTrick1;
+        public AudioClip[] GroundTrick2;
+        public AudioClip[] GroundTrick3;
+        public AudioClip[] AirTrick1;
+        public AudioClip[] AirTrick2;
+        public AudioClip[] AirTrick3;
+        public AudioClip[] GrindTrick1;
+        public AudioClip[] GrindTrick2;
+        public AudioClip[] GrindTrick3;
+        public AudioClip[] HandPlant;
+
+        //Allows players to add their own custom sounds to trigger when they want
+        // <AnimID, Clips>
+        public AudioClip[] CustomSFX;
+        public int[] CustomSFXID;
+
+        public CustomClipDefinition[] CustomClips;
+
+    }
+
+    [Serializable]
+    public struct CustomClipDefinition
+    {
+        public CustomClipDefinition(int _ID, AudioClip[] _audioClips)
+        {
+            ID = _ID;
+            audioClips = _audioClips;
+        }
+
+
+        public  int ID;
+        public AudioClip[] audioClips;
     }
 }
