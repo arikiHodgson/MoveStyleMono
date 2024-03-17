@@ -8,20 +8,17 @@ namespace MoveStylerMono
     public class MoveStyleDefinition : MonoBehaviour
     {
         public string Movestylename = "New Custom Movestyle";
-        //public BrcCharacter FreestyleAnimation = BrcCharacter.Red;
-        //public BrcCharacter BounceAnimation = BrcCharacter.Red;
         public BrcMovestyle ParentMovestyle = BrcMovestyle.Skateboard;
-        //public bool UseHandIK = false;
         // Split the hand IK defaults
         public bool UseHandRIK = false;
         public bool UseHandLIK = false;
 
-        public MeshRenderer[] PropRenderers;
-        public string[] PropAttachmentBones;
-        //public KeyValuePair<MeshRenderer, string>[] Props;
-        public Animator StyleAnimator;
+        public bool StopSwitchToOnFoot = false;
 
-        //public CustomMovementStats CustomMoveStats;
+        public GameObject[] PropObjects;
+        public string[] PropAttachmentBones;
+
+        public Animator StyleAnimator;
 
         //Custom Movement Stats
         public float runSpeed = 6.5f;
